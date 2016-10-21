@@ -231,7 +231,7 @@ module EbayTrader
     # @return [Boolean] +true+ if the ID has the correct format.
     #
     def application_key_valid?(id)
-      id =~ /[A-Z0-9]{8}-[A-F0-9]{4}-[A-F0-9]{4}-[A-F0-9]{4}-[A-F0-9]{12}/i
+      id =~ /.*/i
     end
 
     def secure_auth_token_key(key)
